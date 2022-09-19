@@ -1,0 +1,173 @@
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.34.4.
+--
+-- see: https://github.com/sol/hpack
+
+name:           kucoin-sdk
+version:        0.1.0.0
+description:    Please see the README on GitHub at <https://github.com/githubuser/kucoin-sdk#readme>
+homepage:       https://github.com//kucoin-sdk#readme
+bug-reports:    https://github.com//kucoin-sdk/issues
+author:         Author name here
+maintainer:     example@example.com
+copyright:      2022 Author name here
+license:        BSD3
+license-file:   LICENSE
+build-type:     Simple
+extra-source-files:
+    README.md
+    CHANGELOG.md
+
+source-repository head
+  type: git
+  location: https://github.com//kucoin-sdk
+
+library
+  exposed-modules:
+      Builder
+      User.UserInfo
+  other-modules:
+      Paths_kucoin_sdk
+  hs-source-dirs:
+      src
+  default-extensions:
+      RankNTypes
+      ScopedTypeVariables
+      DataKinds
+      BangPatterns
+      PolyKinds
+      ExistentialQuantification
+      TypeFamilies
+      TypeOperators
+      TypeApplications
+      GADTs
+      OverloadedStrings
+      InstanceSigs
+      EmptyCase
+      StandaloneKindSignatures
+      TemplateHaskell
+      TypeInType
+      UndecidableInstances
+      InstanceSigs
+      NoStarIsType
+      QuantifiedConstraints
+      DeriveGeneric
+      MultiParamTypeClasses
+      QuantifiedConstraints
+  ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints
+  build-depends:
+      aeson
+    , async
+    , base >=4.7 && <5
+    , base64
+    , bytestring
+    , cryptonite
+    , http-types
+    , lens
+    , network
+    , text
+    , utf8-string
+    , uuid
+    , vector
+    , wreq
+  default-language: Haskell2010
+
+executable kucoin-sdk-exe
+  main-is: Main.hs
+  other-modules:
+      Paths_kucoin_sdk
+  hs-source-dirs:
+      app
+  default-extensions:
+      RankNTypes
+      ScopedTypeVariables
+      DataKinds
+      BangPatterns
+      PolyKinds
+      ExistentialQuantification
+      TypeFamilies
+      TypeOperators
+      TypeApplications
+      GADTs
+      OverloadedStrings
+      InstanceSigs
+      EmptyCase
+      StandaloneKindSignatures
+      TemplateHaskell
+      TypeInType
+      UndecidableInstances
+      InstanceSigs
+      NoStarIsType
+      QuantifiedConstraints
+      DeriveGeneric
+      MultiParamTypeClasses
+      QuantifiedConstraints
+  ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      aeson
+    , async
+    , base >=4.7 && <5
+    , base64
+    , bytestring
+    , cryptonite
+    , http-types
+    , kucoin-sdk
+    , lens
+    , network
+    , text
+    , utf8-string
+    , uuid
+    , vector
+    , wreq
+  default-language: Haskell2010
+
+test-suite kucoin-sdk-test
+  type: exitcode-stdio-1.0
+  main-is: Spec.hs
+  other-modules:
+      Paths_kucoin_sdk
+  hs-source-dirs:
+      test
+  default-extensions:
+      RankNTypes
+      ScopedTypeVariables
+      DataKinds
+      BangPatterns
+      PolyKinds
+      ExistentialQuantification
+      TypeFamilies
+      TypeOperators
+      TypeApplications
+      GADTs
+      OverloadedStrings
+      InstanceSigs
+      EmptyCase
+      StandaloneKindSignatures
+      TemplateHaskell
+      TypeInType
+      UndecidableInstances
+      InstanceSigs
+      NoStarIsType
+      QuantifiedConstraints
+      DeriveGeneric
+      MultiParamTypeClasses
+      QuantifiedConstraints
+  ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      aeson
+    , async
+    , base >=4.7 && <5
+    , base64
+    , bytestring
+    , cryptonite
+    , http-types
+    , kucoin-sdk
+    , lens
+    , network
+    , text
+    , utf8-string
+    , uuid
+    , vector
+    , wreq
+  default-language: Haskell2010
